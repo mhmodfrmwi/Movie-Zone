@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="502.0" prefWidth="730.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieapp.Home">
+   <children>
+      <!-- Main Title -->
+      <Label layoutX="262.0" layoutY="23.0" prefHeight="60.0" prefWidth="205.0" text="Movie Zone!" textFill="WHITE"
+             style="-fx-font-size: 34px; -fx-font-family: 'System Bold'; -fx-text-alignment: center;" />
+
+      <!-- Films Section -->
+      <Label layoutX="41.0" layoutY="105.0" text="Films" textFill="WHITE"
+             style="-fx-font-size: 28px; -fx-font-family: 'System Bold';" />
+      <Button fx:id="allFilms" layoutX="41.0" layoutY="168.0" mnemonicParsing="false" onAction="#AllFilmsController"
+              prefHeight="42.0" prefWidth="108.0" text="All" textFill="WHITE"
+              style="-fx-background-color: #c44018; -fx-background-radius: 8;" />
+      <Button fx:id="favourite" layoutX="216.0" layoutY="168.0" mnemonicParsing="false" onAction="#favouriteController"
+              prefHeight="42.0" prefWidth="108.0" text="Favourite" textFill="WHITE"
+              style="-fx-background-color: #c44018; -fx-background-radius: 8;" />
+      <Button fx:id="trending" layoutX="383.0" layoutY="168.0" mnemonicParsing="false" onAction="#trendingController"
+              prefHeight="42.0" prefWidth="108.0" text="Trending" textFill="WHITE"
+              style="-fx-background-color: #c44018; -fx-background-radius: 8;" />
+      <Button fx:id="mostRated" layoutX="571.0" layoutY="168.0" mnemonicParsing="false" onAction="#mostRatedController"
+              prefHeight="42.0" prefWidth="108.0" text="Most Rated" textFill="WHITE"
+              style="-fx-background-color: #c44018; -fx-background-radius: 8;" />
+
+      <!-- Series Section -->
+      <Label layoutX="41.0" layoutY="282.0" text="Series" textFill="WHITE"
+             style="-fx-font-size: 28px; -fx-font-family: 'System Bold';" />
+      <Button fx:id="allSeries" layoutX="41.0" layoutY="361.0" mnemonicParsing="false" onAction="#AllSeriesController"
+              prefHeight="42.0" prefWidth="108.0" text="All" textFill="WHITE"
+              style="-fx-background-color: #c44018; -fx-background-radius: 8;" />
+      <Button fx:id="favouriteSeries" layoutX="216.0" layoutY="361.0" mnemonicParsing="false" onAction="#favouriteSeriesController"
+              prefHeight="42.0" prefWidth="108.0" text="Favourite" textFill="WHITE"
+              style="-fx-background-color: #c44018; -fx-background-radius: 8;" />
+      <Button fx:id="trendingSeries" layoutX="396.0" layoutY="361.0" mnemonicParsing="false" onAction="#trendingSeriesController"
+              prefHeight="42.0" prefWidth="108.0" text="Trending" textFill="WHITE"
+              style="-fx-background-color: #c44018; -fx-background-radius: 8;" />
+      <Button fx:id="mostRatedSeries" layoutX="589.0" layoutY="361.0" mnemonicParsing="false" onAction="#mostRatedSeriesController"
+              prefHeight="42.0" prefWidth="108.0" text="Most Rated" textFill="WHITE"
+              style="-fx-background-color: #c44018; -fx-background-radius: 8;" />
+
+      <!-- Logout Button -->
+      <Button fx:id="logoutBtn" layoutX="311.0" layoutY="451.0" mnemonicParsing="false" onAction="#logoutController"
+              prefHeight="42.0" prefWidth="150.0" text="Logout" textFill="WHITE"
+              style="-fx-background-color: #c44018; -fx-background-radius: 8;" />
+   </children>
+</AnchorPane>

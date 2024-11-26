@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="730.0" prefWidth="1250.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieapp.AllSeries">
+    <children>
+        <!-- Title -->
+        <Label layoutX="525.0" layoutY="20.0" text="Series Zone!" textFill="WHITE" style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, #c44018, 5, 0.5, 0, 1);" />
+
+        <!-- Back Button -->
+        <Button fx:id="backBtn" layoutX="20.0" layoutY="650.0" mnemonicParsing="false" onAction="#backController" prefHeight="40.0" prefWidth="120.0"
+                style="-fx-background-color: #c44018; -fx-font-size: 14px; -fx-border-radius: 8; -fx-background-radius: 8;"
+                text="Back" textFill="WHITE">
+            <style>
+                .button:hover { -fx-background-color: #a83715; }
+                .button:pressed { -fx-background-color: #892d12; }
+            </style>
+        </Button>
+
+        <!-- Search Field -->
+        <TextField fx:id="searchField" layoutX="400.0" layoutY="70.0" prefHeight="40.0" prefWidth="400.0" promptText="Search Series"
+                   style="-fx-background-color: #222; -fx-text-fill: white; -fx-prompt-text-fill: gray; -fx-border-color: #c44018; -fx-border-radius: 8; -fx-background-radius: 8;" />
+
+        <!-- Search Button -->
+        <Button fx:id="searchButton" layoutX="820.0" layoutY="70.0" onAction="#searchSeries" prefHeight="40.0" prefWidth="100.0"
+                style="-fx-background-color: #c44018; -fx-font-size: 14px; -fx-border-radius: 8; -fx-background-radius: 8;"
+                text="Search" textFill="WHITE">
+            <style>
+                .button:hover { -fx-background-color: #a83715; }
+                .button:pressed { -fx-background-color: #892d12; }
+            </style>
+        </Button>
+
+        <!-- ScrollPane for Series -->
+        <ScrollPane fx:id="seriesScrollPane" layoutX="258.0" layoutY="130.0" prefHeight="535.0" prefWidth="732.0"
+                    style="-fx-background: transparent; -fx-border-color: #c44018; -fx-border-width: 2; -fx-border-radius: 10; -fx-padding: 5;">
+            <content>
+                <GridPane fx:id="seriesGrid" hgap="30" vgap="20" style="-fx-padding: 10;" />
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

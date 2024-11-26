@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="702.0" prefWidth="1250.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieapp.Trending">
+   <children>
+      <!-- Title -->
+      <Label layoutX="525.0" layoutY="20.0" text="Trending Movies" textFill="WHITE" style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, #c44018, 5, 0.5, 0, 1);" />
+
+      <!-- Back Button -->
+      <Button fx:id="backBtn" layoutX="20.0" layoutY="650.0" mnemonicParsing="false" onAction="#backController" prefHeight="40.0" prefWidth="120.0"
+              style="-fx-background-color: #c44018; -fx-font-size: 14px; -fx-border-radius: 8; -fx-background-radius: 8;"
+              text="Back" textFill="WHITE">
+         <style>
+            .button:hover { -fx-background-color: #a83715; }
+            .button:pressed { -fx-background-color: #892d12; }
+         </style>
+      </Button>
+
+      <!-- ScrollPane for Trending Movies -->
+      <ScrollPane fx:id="filmsScrollPane" layoutX="258.0" layoutY="90.0" prefHeight="500.0" prefWidth="732.0"
+                  style="-fx-background: transparent; -fx-border-color: #c44018; -fx-border-width: 2; -fx-border-radius: 10; -fx-padding: 5;">
+         <content>
+            <GridPane fx:id="filmsGrid" hgap="30" vgap="20" style="-fx-padding: 10;" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

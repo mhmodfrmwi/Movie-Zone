@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="702.0" prefWidth="1250.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieapp.MostRated">
+   <children>
+      <!-- Header Label -->
+      <Label layoutX="520.0" layoutY="20.0" style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-font-family: 'System';" text="Most Rated Movies" textFill="WHITE" />
+
+      <!-- Back Button -->
+      <Button fx:id="backBtn" layoutX="20.0" layoutY="650.0" onAction="#backController" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #c44018; -fx-font-size: 14px; -fx-border-radius: 8; -fx-background-radius: 8;" text="Back" textFill="WHITE">
+         <style>
+            .button:hover { -fx-background-color: #a83715; }
+            .button:pressed { -fx-background-color: #892d12; }
+         </style>
+      </Button>
+
+      <!-- ScrollPane for Movies Grid -->
+      <ScrollPane fx:id="filmsScrollPane" layoutX="260.0" layoutY="80.0" prefHeight="550.0" prefWidth="730.0" style="-fx-background-color: transparent; -fx-border-color: #c44018; -fx-border-width: 2; -fx-border-radius: 5;">
+         <content>
+            <GridPane fx:id="filmsGrid" hgap="90" style="-fx-padding: 10;" vgap="20">
+               <!-- GridPane elements will be added dynamically -->
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

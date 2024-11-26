@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="502.0" prefWidth="730.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieapp.registerController">
+   <children>
+      <!-- Labels -->
+      <Label layoutX="100.0" layoutY="100.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Username:" textFill="WHITE" />
+      <Label layoutX="100.0" layoutY="160.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Email:" textFill="WHITE" />
+      <Label layoutX="100.0" layoutY="220.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Password:" textFill="WHITE" />
+
+      <!-- Input Fields -->
+      <TextField fx:id="usernameTxt" layoutX="200.0" layoutY="96.0" prefWidth="300.0" style="-fx-background-color: #222; -fx-text-fill: white; -fx-border-color: #c44018; -fx-border-radius: 5; -fx-padding: 5;" />
+      <TextField fx:id="emailTxt" layoutX="200.0" layoutY="156.0" prefWidth="300.0" style="-fx-background-color: #222; -fx-text-fill: white; -fx-border-color: #c44018; -fx-border-radius: 5; -fx-padding: 5;" />
+      <PasswordField fx:id="passwordTxt" layoutX="200.0" layoutY="216.0" prefWidth="300.0" style="-fx-background-color: #222; -fx-text-fill: white; -fx-border-color: #c44018; -fx-border-radius: 5; -fx-padding: 5;" />
+
+      <!-- Buttons -->
+      <Button fx:id="registerBtn" layoutX="200.0" layoutY="280.0" onAction="#registerController" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #c44018; -fx-text-fill: white; -fx-font-size: 14px; -fx-border-radius: 8; -fx-background-radius: 8;" text="Register">
+         <style>
+            .button:hover { -fx-background-color: #a83715; }
+            .button:pressed { -fx-background-color: #892d12; }
+         </style>
+      </Button>
+
+      <Button fx:id="loginBtn" layoutX="200.0" layoutY="340.0" onAction="#loginController" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #c44018; -fx-text-fill: white; -fx-font-size: 14px; -fx-border-radius: 8; -fx-background-radius: 8;" text="Login">
+         <style>
+            .button:hover { -fx-background-color: #a83715; }
+            .button:pressed { -fx-background-color: #892d12; }
+         </style>
+      </Button>
+
+      <!-- Error Label -->
+      <Label fx:id="errorLabel" layoutX="200.0" layoutY="250.0" prefHeight="20.0" prefWidth="300.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" textFill="#c44018" visible="false" />
+
+   </children>
+</AnchorPane>
