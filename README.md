@@ -64,14 +64,6 @@ mvn javafx:run
 
 ---
 
-## API Usage 🌐
-This app integrates with the TMDb API to fetch movie data.  
-**Endpoints used**:
-- `https://api.themoviedb.org/3/trending/all/day`: Fetch trending movies.
-- `https://api.themoviedb.org/3/search/movie`: Search for movies by title.
-
----
-
 ## Key Functionality 💡
 1. **Fetching and Rendering Movies**  
    - Uses `OkHttpClient` to make requests to TMDb API.
